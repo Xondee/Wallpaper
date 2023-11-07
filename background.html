@@ -7,6 +7,7 @@
 		padding:0;
 }
 	iframe {
+		
 		position: fixed;
 		height: 100%;
 		width: 100%;
@@ -15,7 +16,14 @@
   </style>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1135.0" data-gr-ext-installed=""><div class="outer">
-  <iframe width="1920" height="1080" src="https://www.youtube-nocookie.com/embed/{link}?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=1" frameborder="0" allowfullscreen=""></iframe>
-</div>
+    <iframe id="video" width="1920" height="1080" src="https://www.youtube-nocookie.com/embed/${link}?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=1" frameborder="0" allowfullscreen=""></iframe>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const link = params.get("link");
+    const url = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=1"
+    console.log(url); // "sai"
+    document.getElementById('video').src = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=1"
+  </script>
 </body>
 </html>
