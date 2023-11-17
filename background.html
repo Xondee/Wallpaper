@@ -16,14 +16,20 @@
   </style>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1135.0" data-gr-ext-installed=""><div class="outer">
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Playback Error</h5>
         <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">Due to chrome restrictions you cannot autoplay unmuted videos. Press "accept and play" to continue.</div>
+      <div class="modal-body">Due to chrome autoplay restrictions you must click accept and play.</div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Accept and Play</button>
