@@ -3,7 +3,7 @@ Wallpaper for chromeOS
 mainly for school chromebooks
 
 HOW TO USE:
-Go to https://xondee.github.io/wallpaper.
+Go to https://xondee.github.io/Wallpaper.
 Type in video id ( it would be the part in quotations: https://www.youtube.com/watch?v="########"/).
 Then click open.
 Click the 3 dots in the top left corner
