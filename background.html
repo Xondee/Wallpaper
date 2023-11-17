@@ -21,9 +21,10 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const link = params.get("link");
-    const url = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=1"
+    const mute = params.get("mute");
+    const url = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
     console.log(url); // "sai"
-    document.getElementById('video').src = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=1"
+    document.getElementById('video').src = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
   </script>
 </body>
 </html>
