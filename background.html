@@ -23,15 +23,15 @@
     const link = params.get("link");
     const mute = params.get("mute");
     if (link.includes("https://www.youtube.com/watch?v=")) {
-      const vid = link.replace("www.youtube.com/watch?v=", "");
+      const link = link.replace("www.youtube.com/watch?v=", "");
     };
     if (link.includes("https://www.youtube.com/watch?v=")) {
-      const vid = link.replace("youtu.be/", "");
+      const link = link.replace("youtu.be/", "");
     };
     if (link.includes("https://")) {
-      const vid = vid.replace("https://", "");
+      const link = vid.replace("https://", "");
     };
-    const url = "https://www.youtube-nocookie.com/embed/" + vid + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
+    const url = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
     console.log(url); // "sai"
     document.getElementById('video').src = url
   </script>
