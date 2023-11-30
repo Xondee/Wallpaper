@@ -26,10 +26,10 @@
       const vid = link.replace("https://", "");
     };
 	  if (link.includes("https://www.youtube.com/watch?v=")) {
-      const vid = link.replace("www.youtube.com/watch?v=", "");
+      const link = vid.replace("www.youtube.com/watch?v=", "");
     };
     if (link.includes("https://www.youtube.com/watch?v=")) {
-      const vid = link.replace("youtu.be/", "");
+      const link = vid.replace("youtu.be/", "");
     };
     const url = "https://www.youtube-nocookie.com/embed/" + vid + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
     console.log(url); // "sai"
