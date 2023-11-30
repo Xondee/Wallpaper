@@ -22,18 +22,18 @@
     const params = new URLSearchParams(window.location.search);
     const link = params.get("link");
     const mute = params.get("mute");
-    if (link.includes("https://") =+ true) {
-      const link = link.replace("https://", "");
+    if (link.includes("https://")) {
+      const vid = link.replace("https://", "");
     };
-	  if (link.includes("https://www.youtube.com/watch?v=") =+ true) {
-      const link = link.replace("www.youtube.com/watch?v=", "");
+	  if (link.includes("https://www.youtube.com/watch?v=")) {
+      const vid = link.replace("www.youtube.com/watch?v=", "");
     };
-    if (link.includes("https://www.youtube.com/watch?v=") =+ true) {
-      const link = link.replace("youtu.be/", "");
+    if (link.includes("https://www.youtube.com/watch?v=")) {
+      const vid = link.replace("youtu.be/", "");
     };
-    const url = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
+    const url = "https://www.youtube-nocookie.com/embed/" + vid + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
     console.log(url); // "sai"
-    document.getElementById('video').src = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
+    document.getElementById('video').src = url
   </script>
 </body>
 </html>
