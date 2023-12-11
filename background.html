@@ -22,14 +22,17 @@
     const params = new URLSearchParams(window.location.search);
     var link = params.get("link");
     const mute = params.get("mute");
-    if (link.includes("https://www.youtube.com/watch?v=")) {
-      link = link.replace("www.youtube.com/watch?v=", "");
+    if (link.includes("youtube.com/watch?v=")) {
+      link = link.replace("youtube.com/watch?v=", "");
     };
-    if (link.includes("https://www.youtube.com/watch?v=")) {
+    if (link.includes("youtu.be/")) {
       link = link.replace("youtu.be/", "");
     };
     if (link.includes("https://")) {
       link = link.replace("https://", "");
+    };
+    if (link.includes("www.")) {
+      link = link.replace("www.", "");
     };
     const url = "https://www.youtube-nocookie.com/embed/" + link + "?&amp;vq=hd1080&amp;autoplay=1&amp;loop=1&amp;mute=" + mute
     console.log(url); // "sai"
