@@ -1,5 +1,5 @@
 # Wallpaper
-Wallpaper for ChromeOS
+Live wallpaper for ChromeOS
 mainly for school Chromebooks
 
 HOW TO USE:
