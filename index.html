@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Wallpaper Engine for ChromeOS</title>
     <!-- icon -->
-    <link rel="icon" href="/Wallpaper/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -27,14 +27,15 @@
 <div class="container px-4">
   <div class="mx-auto" style="width: 600px">
    <img
-  src="/Wallpaper/img/splash.png"
+  src="img/splash.png"
+      class="img-fluid"
   alt="Splash"
-       width="600" 
-     height="200"
+
+
 />
   </div>
   <div class="mx-auto" style="width: 200px">
-   <form action="/Wallpaper/background.html">
+   <form action="background.html">
   <div class="form-outline mb-4">
     <input type="text" id="link" name="link" class="form-control" />
     <label class="form-label" for="link">Youtube link</label>
@@ -57,18 +58,41 @@
    <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="/Wallpaper/img/Reactive-1.png" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+      <div class="bg-image hover-overlay rounded-3">
+      <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            45deg,
+            hsla(168, 85%, 52%, 0.5),
+            hsla(263, 88%, 45%, 0.5) 100%
+          );
+        "
+      ></div>
+      <img src="img/Reactive-1.png" class="card-img-top" alt="Vinyl"/>
       <div class="card-body">
         <h5 class="card-title">Vinyl and Particls</h5>
         <p class="card-text">
           Webgl reactive wallpaper
         </p>
+        </div>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="/Wallpaper/img/Reactive-2.png" class="card-img-top" alt="Palm Springs Road"/>
+      <div class="bg-image hover-overlay rounded-3">
+      <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            45deg,
+            hsla(168, 85%, 52%, 0.5),
+            hsla(263, 88%, 45%, 0.5) 100%
+          );
+        "
+      ></div>
+      <img src="img/Reactive-2.png" class="card-img-top" alt="Fluid"/>
       <div class="card-body">
         <h5 class="card-title">Fluid</h5>
         <p class="card-text">Webgl reactive wallpaper</p>
@@ -77,7 +101,18 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="/Wallpaper/img/Reactive-3.png" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+      <div class="bg-image hover-overlay rounded-3">
+      <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            45deg,
+            hsla(168, 85%, 52%, 0.5),
+            hsla(263, 88%, 45%, 0.5) 100%
+          );
+        "
+      ></div>
+      <img src="img/Reactive-3.png" class="card-img-top" alt="Visualizer"/>
       <div class="card-body">
         <h5 class="card-title">Audio visualizer</h5>
         <p class="card-text">Webgl reactive wallpaper</p>
@@ -86,7 +121,18 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="/Wallpaper/img/Reactive-4.png" class="card-img-top" alt="Skyscrapers"/>
+      <div class="bg-image hover-overlay rounded-3">
+      <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            45deg,
+            hsla(168, 85%, 52%, 0.5),
+            hsla(263, 88%, 45%, 0.5) 100%
+          );
+        "
+      ></div>
+      <img src="img/Reactive-4.png" class="card-img-top" alt="Softbody"/>
       <div class="card-body">
         <h5 class="card-title">Softbody</h5>
         <p class="card-text">
